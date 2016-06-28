@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [KuPortal_DocCollection]">
+  <parameter name="sHub" value="localhost"/>
+  <parameter name="Environment" value="Test"/>
+  <parameter name="sHubPort" value="4444"/>
+  <parameter name="Browser" value="firefox"/>
+  <listeners>
+    <listener class-name="commonfunctions.ScreenShotOnTestFailure"/>
+  </listeners>
+  <test name="KUPDocCollection_FireFox(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="environment.EnvironmentVariables">
+        <methods>
+          <include name="BeforeSuite_Orion1"/>
+        </methods>
+      </class> <!-- environment.EnvironmentVariables -->
+      <class name="orionLeadFlow.OrionLeadFlow">
+        <methods>
+          <include name="BrowseToAddNewLeadPage"/>
+          <include name="BeforeNavigation"/>
+          <include name="CreateLead"/>
+        </methods>
+      </class> <!-- orionLeadFlow.OrionLeadFlow -->
+    </classes>
+  </test> <!-- KUPDocCollection_FireFox(failed) -->
+</suite> <!-- Failed suite [KuPortal_DocCollection] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Orion1CLS">
+<parameter name="Environment" value="Stage"/>
+<parameter name="sHub" value="localhost"/>
+<parameter name="sHubPort" value="4444"/>
+<listeners>
+      <listener class-name="commonfunctions.ScreenShotOnTestFailure" />
+</listeners>
+    <test name="Orion1CLS_FireFox">
+    <parameter name="Browser" value="firefox"/>
+    <classes>     
+      <class name = "environment.EnvironmentVariables" />
+      <class name = "orionLeadFlow.OrionLeadFlow" />
+    </classes>
+    </test>
+</suite>

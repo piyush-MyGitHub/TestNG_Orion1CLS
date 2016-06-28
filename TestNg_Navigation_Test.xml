@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Orion1CLS">
+<parameter name="Environment" value="TEST"/>
+<parameter name="sHub" value="localhost"/>
+<parameter name="sHubPort" value="4444"/>
+<listeners>
+      <listener class-name="commonfunctions.ScreenShotOnTestFailure" />
+</listeners>
+    <test name="Orion1CLS_firefox">
+    <parameter name="Browser" value="firefox"/>
+    <classes>     
+      <class name = "environment.EnvironmentVariables" />
+     <class name = "Orion1_Navigation.Home" />
+      <class name = "Orion1_Navigation.Home_AddNewLeadReferral" />
+      <class name = "Orion1_Navigation.Home_StudentLookup" />
+      <class name = "Orion1_Navigation.Admin" />
+      <class name = "Orion1_Navigation.Admissions" />
+      <class name = "Orion1_Navigation.Marketing" />
+     <class name = "Orion1_Navigation.Academic" />
+      <class name = "Orion1_Navigation.Accounting" />
+      <class name = "Orion1_Navigation.Editorial" />
+      <class name = "Orion1_Navigation.Ticketing" />
+       <class name = "Orion1_Navigation.DocumentsImaging" />
+        <class name ="orion1_SearchLeads.Search_Leads" />
+         <class name ="orion1_NewLeads.Lead_InfoCall" />
+         <class name ="orion1_NewLeads.Lead_Referral" />
+         <class name ="orion1_NewLeads.Lead_LiveChat" />
+         <class name ="orion1_NewLeads.Lead_WarmTransfer" />
+         <class name ="orion1_NewLeads.StudentManager" />
+      <!--<class name = "orion1_FileClose.FileCloseStudentManager" />
+        
+         <class name = "orion1_FileClose.FileCloseAdmissionManager" />-->
+       </classes>
+    </test>
+</suite>

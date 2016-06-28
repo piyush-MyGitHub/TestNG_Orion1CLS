@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  KUPDocCollection_FireFox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>KUPDocCollection_FireFox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 09 19:48:47 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>170 seconds (170409 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='orionLeadFlow.OrionLeadFlow.VerifyLeadInAdmisssionManager()'><b>VerifyLeadInAdmisssionManager</b><br>Test class: orionLeadFlow.OrionLeadFlow<br>Parameters: public void orionLeadFlow.OrionLeadFlow.VerifyLeadInAdmisssionManager(java.lang.reflect.Method)</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at orionLeadFlow.OrionLeadFlow.VerifyLeadInAdmisssionManager(OrionLeadFlow.java:303)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31677657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31677657'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at orionLeadFlow.OrionLeadFlow.VerifyLeadInAdmisssionManager(OrionLeadFlow.java:303)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>42</td>
+<td>orionLeadFlow.OrionLeadFlow@5b84c0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='orionLeadFlow.OrionLeadFlow.BrowseToAddNewLeadPage()'><b>BrowseToAddNewLeadPage</b><br>Test class: orionLeadFlow.OrionLeadFlow<br>Parameters: public void orionLeadFlow.OrionLeadFlow.BrowseToAddNewLeadPage(java.lang.reflect.Method)</td>
+<td></td>
+<td>19</td>
+<td>orionLeadFlow.OrionLeadFlow@5b84c0</td></tr>
+<tr>
+<td title='orionLeadFlow.OrionLeadFlow.CreateLead()'><b>CreateLead</b><br>Test class: orionLeadFlow.OrionLeadFlow<br>Parameters: public void orionLeadFlow.OrionLeadFlow.CreateLead(java.lang.reflect.Method)<br/>
+<a href="#Output-30491454" onClick='toggleBox("Output-30491454", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30491454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30491454">
+[UserExtension][2016.05.09]'[07:51:37]     Fail: Unable to locate element: {"method":"name","selector":"CtlApplyForm1_radChannelGroup_0"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'PMISHRA-LAPTOP', ip: '10.163.105.94', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: driver.version: unknown
+Command duration or timeout: 2.45 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'PMISHRA-LAPTOP', ip: '10.163.105.94', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=ea9617a3-951a-4acf-b601-dc2740b793c3, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ea9617a3-951a-4acf-b601-dc2740b793c3
+*** Element info: {Using=name, value=CtlApplyForm1_radChannelGroup_0}<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>orionLeadFlow.OrionLeadFlow@5b84c0</td></tr>
+</table><p>
+</body>
+</html>
